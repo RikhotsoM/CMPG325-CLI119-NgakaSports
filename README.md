@@ -37,10 +37,10 @@ The CMPG325 Network Design Project (CLI-119) delivers a complete Packet Tracer i
 
 **2.Proposed Topology Overview**
 
-                              ┌──────────────────────┐
-                    │     ISP / INTERNET    │
-                    │   Gateway: 10.46.254.1│
-                    └───────────┬────────────┘
+                    ┌──────────────────────┐
+                    │     ISP / INTERNET   │
+                    │  Gateway: 10.46.254.1│
+                    └───────────┬──────────┘
                                 │
                     ┌───────────▼────────────┐
                     │     EDGE ROUTER        │
@@ -58,11 +58,11 @@ The CMPG325 Network Design Project (CLI-119) delivers a complete Packet Tracer i
               │   SWITCH 1     │  │       SWITCH 2              │
               │   (Reused)     │  │       (Reused)              │
               │                │  │                             │
-              │ VLAN10  Admin   │  │ VLAN20  Finance             │
-              │ VLAN99  Guest   │  │ VLAN30  Sports Programs    │
-              │ VLAN100 IT      │  │ VLAN40  Facilities          │
-              │                │  │ VLAN50  🖨️ Shared Printer    │
-              └─────────────────┘  └─────────────────────────────┘     
+              │ VLAN10  Admin  │  │VLAN20  Finance              │
+              │ VLAN99  Guest  │  │ VLAN30  Sports Programs     │
+              │ VLAN100 IT     │  │ VLAN40  Facilities          │
+              │                │  │ VLAN50  🖨️ Shared Printer  |
+              └────────────────┘  └─────────────────────────────┘     
 
 
 **3.IP Addressing Scheme**   
