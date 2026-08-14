@@ -37,28 +37,32 @@ The CMPG325 Network Design Project (CLI-119) delivers a complete Packet Tracer i
 
 **2.Proposed Topology Overview**
 
-┌─────────────────────┐
-│ ISP / INTERNET │
-│ Gateway: 10.46.254.1│
-└──────────┬──────────┘
-│
-┌──────▼──────┐
-│ EDGE ROUTER │ ← DEFAULT ROUTE → ISP
-│ CLI119-ER │
-└──────┬──────┘
-│
-┌──────▼──────┐
-│ CORE ROUTER │ ← DEFAULT ROUTE → Edge Router
-│ CLI119-CR │
-└──┬──────┬───┘
-│ │
-┌──────▼──┐ ┌▼──────────────┐
-│SWITCH 1 │ │ SWITCH 2 │ ◄── REUSED EXISTING SWITCHES
-│Admin │ │Finance (VLAN20)│
-│IT │ │Sports (VLAN30)│
-│Guest │ │Facilities │
-└─────────┘ │🖨️ PRINTER VLAN50│
-└─────────────────┘
+                    ┌─────────────────────┐
+                    │     ISP / INTERNET   │
+                    │  Gateway: 10.46.254.1│
+                    └──────────┬────────────┘
+                               │
+                    ┌──────────▼────────────┐
+                    │    EDGE ROUTER        │
+                    │  ← Default Route → ISP│
+                    │  IP: 10.46.254.2      │
+                    └──────────┬────────────┘
+                               │
+                    ┌──────────▼────────────┐
+                    │    CORE ROUTER        │
+                    │ ← Default Route → Edge│
+                    │  IP: 10.46.254.6      │
+                    └──────┬────────┬───────┘
+                           │        │
+              ┌────────────▼───┐  ┌──▼──────────────────────┐
+              │   SWITCH 1    │  │       SWITCH 2           │
+              │ (Reused)      │  │     (Reused)              │
+              │               │  │                           │
+              │ VLAN10  Admin │  │ VLAN20  Finance          │
+              │ VLAN99  Guest │  │ VLAN30  Sports Programs  │
+              │ VLAN100 IT    │  │ VLAN40  Facilities        │
+              │               │  │ VLAN50  🖨️ SHARED PRINTER│
+              └───────────────┘  └───────────────────────────┘
 
 
 **3.IP Addressing Scheme**   
