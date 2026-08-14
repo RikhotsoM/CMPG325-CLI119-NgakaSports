@@ -7,7 +7,7 @@ The CMPG325 Network Design Project (CLI-119) delivers a complete Packet Tracer i
 **Assigned Challenge:** Default Routing (Edge/ISP Path Design)
 
 
- **1. Reasonable Assumptions & Justifications**
+ **1.Reasonable Assumptions & Justifications**
 
 **1.1 Organisation Structure & Departments**
 **Assumption:** The foundation operates from one main office in Mahikeng with 5 core departments:
@@ -35,3 +35,41 @@ The CMPG325 Network Design Project (CLI-119) delivers a complete Packet Tracer i
 **Assumption:** Edge Router has default route → ISP. Core Router has default route → Edge Router.
 **Justification:** Standard edge/ISP path design and fulfils the assigned networking challenge.
 
+**2.Proposed Topology Overview**
+
+┌─────────────────────┐
+│ ISP / INTERNET │
+│ Gateway: 10.46.254.1│
+└──────────┬──────────┘
+│
+┌──────▼──────┐
+│ EDGE ROUTER │ ← DEFAULT ROUTE → ISP
+│ CLI119-ER │
+└──────┬──────┘
+│
+┌──────▼──────┐
+│ CORE ROUTER │ ← DEFAULT ROUTE → Edge Router
+│ CLI119-CR │
+└──┬──────┬───┘
+│ │
+┌──────▼──┐ ┌▼──────────────┐
+│SWITCH 1 │ │ SWITCH 2 │ ◄── REUSED EXISTING SWITCHES
+│Admin │ │Finance (VLAN20)│
+│IT │ │Sports (VLAN30)│
+│Guest │ │Facilities │
+└─────────┘ │🖨️ PRINTER VLAN50│
+└─────────────────┘
+
+
+**3.IP Addressing Scheme**   
+
+VLAN ID	Department / Purpose	Subnet	Subnet Mask	Usable Hosts	Default Gateway	Assigned Device / Notes
+10	Admin & Management	10.46.10.0	255.255.255.0	254	10.46.10.1	Core Router
+20	Finance & HR	10.46.20.0	255.255.255.0	254	10.46.20.1	Core Router
+30	Sports Programs	10.46.30.0	255.255.255.0	254	10.46.30.1	Core Router
+40	Facilities & Events	10.46.40.0	255.255.255.0	254	10.46.40.1	Core Router
+50	Shared Printer Zone	10.46.50.0	255.255.255.0	254	10.46.50.1	Printer: 10.46.50.10
+99	Guest Network	10.46.99.0	255.255.255.0	254	10.46.99.1	Core Router
+100	IT Support	10.46.100.0	255.255.255.0	254	10.46.100.1	Core Router
+—	Edge ↔ ISP Link	10.46.254.0	255.255.255.252	2	10.46.254.1	ISP Gateway
+—	Edge ↔ Core Link	10.46.254.4	255.255.255.252	2	10.46.254.5	Edge Router End
