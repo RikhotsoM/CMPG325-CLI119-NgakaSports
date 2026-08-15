@@ -61,7 +61,7 @@ The CMPG325 Network Design Project (CLI-119) delivers a complete Packet Tracer i
               │ VLAN10  Admin  │  │ VLAN20  Finance             │
               │ VLAN99  Guest  │  │ VLAN30  Sports Programs     │
               │ VLAN100 IT     │  │ VLAN40  Facilities          │
-              │                │  │ VLAN50  🖨️ Shared Printer   |
+              │                │  │ VLAN50  Shared Printer      |
               └────────────────┘  └─────────────────────────────┘     
 
 
