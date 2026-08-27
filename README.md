@@ -11,12 +11,14 @@ The CMPG325 Network Design Project (CLI-119) delivers a complete Packet Tracer i
 
 **1.1 Organisation Structure & Departments**
 **Assumption:** The foundation operates from one main office in Mahikeng with 5 core departments:
-- Admin & Management
-- Finance & HR
-- Sports Programs & Coaching
-- Facilities & Events
-- IT Support
-- Plus Guest Network for visitors
+
+Admin and Management
+Finance and HR
+Sports Programs and Coaching
+Facilities & Events
+IT Support
+Plus Guest Network for visitors
+
 **Justification:** This structure logically fits a regional sports development organisation. The brief does not specify departments, so this is a reasonable functional layout.
 
 **1.2 Users, Devices & Subnetting**
