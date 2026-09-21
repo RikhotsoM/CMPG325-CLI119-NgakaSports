@@ -25,6 +25,7 @@ Switch-2 (Cisco 2960) — Access Layer
 | 99 | Guest_VLAN | 10.46.99.0/24 | 10.46.99.1 | Switch-1 Fa0/3, Switch-2 Fa0/7 |
 | 20 | Finance_VLAN | 10.46.20.0/24 | 10.46.20.1 | Switch-2 Fa0/5 |
 | 30 | Sports_VLAN | 10.46.30.0/24 | 10.46.30.1 | Switch-2 Fa0/6 |
+| 40 | Facilities_VLAN | 10.46.40.0/24 | 10.46.40.1 | Switch-2 Fa0/7 |
 | 50 | Printer_VLAN | 10.46.50.0/24 | 10.46.50.1 | Switch-2 Fa0/8 |
 
 
