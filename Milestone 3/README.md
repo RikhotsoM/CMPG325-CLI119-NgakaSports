@@ -76,21 +76,21 @@ All subinterfaces: no shutdown
 ## 4. Verification Results
 | Verification Method | Outcome |
 |---------------------|---------|
-| `show vlan brief` | All VLANs present with correct port assignments ✅ |
-| `show interfaces trunk` | Trunks active — all required VLANs forwarding ✅ |
-| `show ip interface brief` | All gateways UP/UP ✅ |
-| Inter-VLAN ping tests | All subnets reachable ✅ |
-| Full topology inspection | All links green — no errors ✅ |
+| `show vlan brief` | All VLANs present with correct port assignments  |
+| `show interfaces trunk` | Trunks active — all required VLANs forwarding  |
+| `show ip interface brief` | All gateways UP/UP |
+| Inter-VLAN ping tests | All subnets reachable  |
+| Full topology inspection | All links green — no errors  |
 
 
 
 ## 5. Troubleshooting & Challenges
 | Issue | Root Cause | Resolution |
 |-------|-----------|-----------|
-| Initial ping timeouts | VLAN99/100 misassigned — ports in default VLAN 1 | Corrected port-to-VLAN mapping on both switches ✅ |
-| Trunk inconsistency errors | Native VLAN mismatch between switches | Standardized Native VLAN to 1 on all trunk ports ✅ |
-| Deletion confusion | VLANs 99/100 temporarily removed | Restored as Guest/IT per design specification ✅ |
-| Console command rejection | Executed outside `(config)` mode | Confirmed prompt context before entering commands ✅ |
+| Initial ping timeouts | VLAN99/100 misassigned — ports in default VLAN 1 | Corrected port-to-VLAN mapping on both switches  |
+| Trunk inconsistency errors | Native VLAN mismatch between switches | Standardized Native VLAN to 1 on all trunk ports  |
+| Deletion confusion | VLANs 99/100 temporarily removed | Restored as Guest/IT per design specification  |
+| Console command rejection | Executed outside `(config)` mode | Confirmed prompt context before entering commands  |
 
 
 ## 6. Deliverables Checklist
