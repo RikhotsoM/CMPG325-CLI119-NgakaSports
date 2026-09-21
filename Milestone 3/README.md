@@ -93,17 +93,7 @@ All subinterfaces: no shutdown
 | Console command rejection | Executed outside `(config)` mode | Confirmed prompt context before entering commands  |
 
 
-## 6. Deliverables Checklist
-| Deliverable | Status |
-|-------------|--------|
-| Final Packet Tracer File (.pkt) |  Uploaded |
-| GitHub Portfolio — Screenshots |  Complete |
-| GitHub Portfolio — README Documentation |  Complete |
-| Technical Report |  This document |
-| Demonstration Video (15–20 min) |  Pending |
-
-
-## 7. Conclusion
+## 6. Conclusion
 This implementation demonstrates a complete working multi-VLAN network with inter-VLAN routing. Through systematic configuration, verification, and troubleshooting, all design requirements have been met. The network is stable, fully segmented, and production-ready. Key competencies demonstrated include VLAN management, 802.1Q trunking, Router-on-a-Stick configuration, and systematic network troubleshooting.
 
 
