@@ -97,7 +97,7 @@ All subinterfaces: no shutdown
 This implementation demonstrates a complete working multi-VLAN network with inter-VLAN routing. Through systematic configuration, verification, and troubleshooting, all design requirements have been met. The network is stable, fully segmented, and production-ready. Key competencies demonstrated include VLAN management, 802.1Q trunking, Router-on-a-Stick configuration, and systematic network troubleshooting.
 
 
-## 8. References
+## 7. References
 - Cisco Systems. Cisco IOS Command Reference — VLAN & Switching
 - CompTIA Network+ — VLAN Segmentation & Inter-VLAN Routing
 - Cisco Packet Tracer 8.2 — Simulation Environment
