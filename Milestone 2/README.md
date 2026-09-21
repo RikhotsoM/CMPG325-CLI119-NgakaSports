@@ -67,17 +67,15 @@ All connectivity tests performed from device Command Prompt:
 | File | Description |
 |------|-------------|
 | `Milestone2_Network.pkt` | Final Packet Tracer working file |
-| `screenshots/01-switch1-vlans.png` | `show vlan brief` — Switch-1 |
-| `screenshots/02-switch2-vlans.png` | `show vlan brief` — Switch-2 |
-| `screenshots/03-trunk-status.png` | `show interfaces trunk` — VLAN pruning list |
+| `screenshots/01-switch1-vlans.png` | `show vlan brief and interface truck` — Switch-1 |
+| `screenshots/02-switch2-vlans.png` | `show vlan brief and interface truck` — Switch-2 |
 | `screenshots/04-core-gateways.png` | `show ip interface brief` — Core Router |
 | `screenshots/05-ping-admin.png` | Admin VLAN connectivity test |
 | `screenshots/06-ping-it.png` | IT VLAN connectivity test |
 | `screenshots/07-ping-guest.png` | Guest VLAN connectivity test |
 | `screenshots/08-ping-finance.png` | Finance VLAN connectivity test |
 | `screenshots/09-ping-sports.png` | Sports VLAN connectivity test |
-| `screenshots/10-ping-printer.png` | Printer VLAN gateway test |
-| `screenshots/11-topology-overview.png` | Full network topology — all links active |
+| `screenshots/10-topology.png` | Full network topology — all links active |
 
 **Note:** Initial single-packet loss observed on first ping is attributed to ARP resolution and trunk convergence — standard network behavior. All subsequent packets received at 0% loss.
 
