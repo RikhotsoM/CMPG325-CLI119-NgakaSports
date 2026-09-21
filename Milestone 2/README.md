@@ -56,12 +56,13 @@ All connectivity tests performed from device Command Prompt:
 
 | Test | Target IP | Result | Status |
 |------|-----------|--------|--------|
-| Admin → Gateway | 10.46.10.1 | Reply |  Pass |
-| IT → Gateway | 10.46.100.1 | Reply |  Pass |
-| Guest → Gateway | 10.46.99.1 | Reply |  Pass |
-| Finance → Gateway | 10.46.20.1 | Reply |  Pass |
-| Sports → Gateway | 10.46.30.1 | Reply |  Pass |
-| Printer → Gateway | 10.46.50.1 | Reply |  Pass |
+| Admin - Gateway | 10.46.10.1 | Reply |  Pass |
+| IT - Gateway | 10.46.100.1 | Reply |  Pass |
+| Guest - Gateway | 10.46.99.1 | Reply |  Pass |
+| Finance - Gateway | 10.46.20.1 | Reply |  Pass |
+| Sports - Gateway | 10.46.30.1 | Reply |  Pass |
+| Facilities - Gateaway | 10.46.40.1 | Reply | Pass |
+| Printer - Gateway | 10.46.50.1 | Reply |  Pass |
 
 
 ## Evidence Inventory
